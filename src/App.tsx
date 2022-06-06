@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 
 import { store } from "./store/store";
 import { routes as appRoutes } from "./routes";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   // define theme

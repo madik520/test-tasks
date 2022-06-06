@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { routes } from "../routes";
+import { routes } from "../../../routes";
 import { NavLink } from "react-router-dom";
 
 const Navbar: FC = (): ReactElement => {
@@ -42,7 +42,7 @@ const Navbar: FC = (): ReactElement => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            Starter App
+            Rickandmorty
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
