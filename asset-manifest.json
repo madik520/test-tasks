@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/test-tasks/static/js/main.83278fdb.js",
+    "static/js/787.1fb35464.chunk.js": "/test-tasks/static/js/787.1fb35464.chunk.js",
+    "index.html": "/test-tasks/index.html",
+    "main.83278fdb.js.map": "/test-tasks/static/js/main.83278fdb.js.map",
+    "787.1fb35464.chunk.js.map": "/test-tasks/static/js/787.1fb35464.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.83278fdb.js"
+  ]
+}
