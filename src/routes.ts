@@ -1,9 +1,10 @@
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Character from './pages/Character';
 
 // other
-import {FC} from "react";
+import { FC } from "react";
 
 // interface
 interface Route {
@@ -28,5 +29,12 @@ export const routes: Array<Route> = [
         path: '/favorite',
         enabled: true,
         component: About
+    },
+    {
+        key: 'character-route',
+        title: 'Character',
+        path: '/character/:id',
+        enabled: true,
+        component: Character
     },
 ]

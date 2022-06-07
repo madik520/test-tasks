@@ -17,6 +17,7 @@ export type CharacterTypes = {
   episode: Array<string>;
   url: string;
   created: string;
+  favorite: boolean;
 }
 
 export interface IAllCharacters {
@@ -40,4 +41,6 @@ export interface IState {
     isFetching: boolean;
     characters: IAllCharacters;
   };
+  selectedCharacter: CharacterTypes;
+  favoriteChar: CharacterTypes[];
 }

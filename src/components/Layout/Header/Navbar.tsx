@@ -73,7 +73,7 @@ const Navbar: FC = (): ReactElement => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {routes.map((page) => (
+              {routes.slice(0,2).map((page) => (
                 <Link
                   key={page.key}
                   component={NavLink}
@@ -107,7 +107,7 @@ const Navbar: FC = (): ReactElement => {
                 marginLeft: "1rem",
               }}
             >
-              {routes.map((page) => (
+              {routes.slice(0,2).map((page) => (
                 <Link
                   key={page.key}
                   component={NavLink}

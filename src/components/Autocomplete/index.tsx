@@ -94,7 +94,7 @@ const AutocompleteInput = () => {
       renderOption={(props, option) => {
         return (
           <ListItem {...props} key={props.id}>
-            <Link style={{ width: "100%", color: 'black', textDecoration: 'none' }} to={`/character-${option.id}`}>
+            <Link style={{ width: "100%", color: 'black', textDecoration: 'none' }} to={`/character/${option.id}`}>
               <ListItemButton>
                 <ListItemAvatar>
                   <Avatar alt={`${option.name}`} src={`${option.image}`} /> 
