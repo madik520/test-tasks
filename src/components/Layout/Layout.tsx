@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { Box, CssBaseline } from "@mui/material";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Header/Navbar";
+import Footer from "./Footer/Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,11 +18,12 @@ const Layout: FC<LayoutProps> = ({ children }) => {
           justifyContent: "flex-start",
           minHeight: "100vh",
           maxWidth: "100vw",
-          flexGrow: 1,
         }}
       >
         <Navbar />
-        {children}
+          <Box sx={{ width: { lg: 1140, xs: '90%' }, margin: 'auto', flex: 1 }}>
+            {children}
+          </Box>
         <Footer />
       </Box>
     </>

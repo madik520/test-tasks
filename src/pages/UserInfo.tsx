@@ -1,20 +1,19 @@
 import React, { ReactElement, FC } from "react";
 import { Box, Typography } from "@mui/material";
 
-const About: FC<any> = (): ReactElement => {
+const UserInfo: FC<any> = (): ReactElement => {
   return (
     <Box
       sx={{
-        flexGrow: 1,
-        backgroundColor: "whitesmoke",
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column",
         alignItems: "center",
+        mt: 2,
       }}
     >
-      <Typography variant="h3">About</Typography>
+      <Typography variant="h3">User info</Typography>
     </Box>
   );
 };
 
-export default About;
+export default UserInfo;

@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { routes } from "../routes";
+import { routes } from "../../../routes";
 import { NavLink } from "react-router-dom";
 
 const Navbar: FC = (): ReactElement => {
@@ -42,7 +42,7 @@ const Navbar: FC = (): ReactElement => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            Starter App
+            GitHub Searcher
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -73,7 +73,7 @@ const Navbar: FC = (): ReactElement => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {routes.map((page) => (
+              {routes.slice(0,1).map((page) => (
                 <Link
                   key={page.key}
                   component={NavLink}
@@ -107,7 +107,7 @@ const Navbar: FC = (): ReactElement => {
                 marginLeft: "1rem",
               }}
             >
-              {routes.map((page) => (
+              {routes.slice(0,1).map((page) => (
                 <Link
                   key={page.key}
                   component={NavLink}
